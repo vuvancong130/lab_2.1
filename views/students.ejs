@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>danh sach sinh vien</title>
+  </head>
+  <body>
+    <h1>danh sach sinh vien</h1>
+    <table>
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td></td>
+          <td>NAME</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% sinhviens.forEach(function(sinhvien){%>
+        <tr>
+          <td><%= sinhvien.id%></td>
+          <td></td>
+          <td><%= sinhvien.name%></td>
+        </tr>
+
+        <%}); %>>
+      </tbody>
+    </table>
+  </body>
+</html>
